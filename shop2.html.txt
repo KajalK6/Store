@@ -1,0 +1,115 @@
+\<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shop Onboarding - Step 3</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <style>
+    body {
+      background-color: #f4f6f9;
+      padding: 2rem;
+    }
+    .form-wrapper {
+      max-height: 90vh;
+      overflow-y: auto;
+      background-color: #fff;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    }
+    .form-section {
+      margin-bottom: 2rem;
+    }
+    label {
+      font-weight: 500;
+    }
+    input[type="text"],
+    textarea {
+      border-radius: 5px;
+    }
+    .form-check-input {
+      margin-top: 0.3rem;
+    }
+    .btn-group {
+      margin-top: 1.5rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2 class="mb-4"> Add Product and Pricing</h2>
+    <div class="form-wrapper">
+      <form>
+        <!-- Basic Details -->
+        <div class="form-section">
+          <h5>Basic Details</h5>
+          <div class="mb-3">
+            <label>Product Name</label>
+            <input type="text" class="form-control" placeholder="e.g. stationery book" />
+          </div>
+          <div class="mb-3">
+            <label>Product Description</label>
+            <textarea class="form-control" rows="3" placeholder="Input text"></textarea>
+          </div>
+          <div class="mb-3">
+            <label>Add Image(s)</label>
+            <input type="file" class="form-control" />
+          </div>
+          <div class="mb-3 form-check">
+            <input class="form-check-input" type="checkbox" id="skuCheck" checked />
+            <label class="form-check-label" for="skuCheck">This product has an SKU code</label>
+            <input type="text" class="form-control mt-2" placeholder="e.g. PRD000031" />
+          </div>
+          <div class="mb-3 form-check">
+            <input class="form-check-input" type="checkbox" id="hsnCheck" />
+            <label class="form-check-label" for="hsnCheck">This product has an HSN/SAC code</label>
+          </div>
+        </div>
+
+        <!-- Pricing Details -->
+        <div class="form-section">
+          <h5>Pricing Details</h5>
+          <div class="mb-3 form-check">
+            <input class="form-check-input" type="checkbox" id="gstCheck" checked />
+            <label class="form-check-label" for="gstCheck">Price inclusive of GST</label>
+          </div>
+          <div class="row g-3">
+            <div class="col-md-6">
+              <label>Net Price</label>
+              <input type="text" class="form-control" placeholder="e.g. 80" />
+            </div>
+            <div class="col-md-6">
+              <label>List Price</label>
+              <input type="text" class="form-control" placeholder="e.g. 100" />
+            </div>
+            <div class="col-md-6">
+              <label>Discount Percentage</label>
+              <input type="text" class="form-control" placeholder="e.g. 10" />
+            </div>
+            <div class="col-md-6">
+              <label>GST Rate</label>
+              <input type="text" class="form-control" placeholder="e.g. 5%" />
+            </div>
+            <div class="col-md-6">
+              <label>Shipping Charges (if any)</label>
+              <input type="text" class="form-control" placeholder="e.g. 40" />
+            </div>
+            <div class="col-md-6">
+              <label>Stock Level</label>
+              <input type="text" class="form-control" placeholder="e.g. 110" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Navigation -->
+        <div class="btn-group d-flex justify-content-between">
+          <button type="button" class="btn btn-secondary" ><a href="shop1.html">Back</a></button>
+          <button type="submit" class="btn btn-success"><a href="shop4.html">Next</a></button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" ></script>
+</body>
+</html>
