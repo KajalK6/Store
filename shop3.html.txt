@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Step 3 - Add Product</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background: #f4f4f4;
+    }
+
+    .container {
+      max-width: 500px;
+      margin: auto;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    .scroll-box {
+      max-height: 500px;
+      overflow-y: auto;
+      padding-right: 10px;
+    }
+
+    section {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    input[type="text"], textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    textarea {
+      resize: vertical;
+      height: 60px;
+    }
+
+    .image-box {
+      width: 200px;
+      height: 180px;
+      background: #ddd;
+      margin-top: 5px;
+      border-radius: 2px;
+    }
+
+    .checkbox-group input[type="text"] {
+      margin-top: 5px;
+    }
+
+    .form-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .form-row input {
+      width: 100%;
+    }
+
+    .button-row {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+
+    button {
+      padding: 10px 20px;
+      border: none;
+      background-color: lightgray;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button.next {
+      background-color: royalblue;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Lets add your first product</h2>
+
+    <div class="scroll-box">
+      <!-- Basic Details -->
+      <section>
+        <h3>Basic Details</h3>
+
+        <label>Product name</label>
+        <input type="text" placeholder="eg - anatomy book">
+
+        <label>Product Description</label>
+        <textarea placeholder="Input text"></textarea>
+
+        <label>Add Image(s)</label>
+        <div class="image-box">
+          <img src="https://tse2.mm.bing.net/th?id=OIP.8UZtwA3Wk47gUs1Jqz5H3AHaE8&pid=Api&P=0&h=180" class="card-img-top theme-img" alt="Bags Theme"/>
+        </div>
+
+        <div class="checkbox-group">
+          <label>
+            <input type="checkbox"> this product has an SKU code
+          </label>
+          <input type="text" placeholder="eg - PROD0001">
+
+          <label>
+            <input type="checkbox"> this product has an HSN/SAC code
+          </label>
+        </div>
+      </section>
+
+      <!-- Pricing Details -->
+      <section>
+        <h3>Pricing Details</h3>
+
+        <label>
+          <input type="checkbox"> price inclusive of GST
+        </label>
+
+        <div class="form-row">
+          <input type="text" placeholder="Net price (eg - 80)">
+          <input type="text" placeholder="List price (eg - 100)">
+        </div>
+
+        <div class="form-row">
+          <input type="text" placeholder="Discount percentage (eg - 40)">
+          <input type="text" placeholder="GST rate (eg - 20)">
+        </div>
+
+        <div class="form-row">
+          <input type="text" placeholder="Shipping charges (if any)">
+          <input type="text" placeholder="Stock level (eg - 110)">
+        </div>
+      </section>
+
+      <!-- Buttons -->
+      <div class="button-row">
+        <button>Back</button>
+        <button class="next">Next</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
